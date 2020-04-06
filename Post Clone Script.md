@@ -9,3 +9,9 @@ Post Clone Script
 
 
 ``` ##[error]Bash failed with error: The process '/bin/bash' failed with exit code 1 ```
+
+
+``` ##[error]The process '/bin/bash' failed with exit code 56 ```
+
+
+``` ##[error]Bash failed with error: The process '/bin/bash' failed with exit code 56 ```

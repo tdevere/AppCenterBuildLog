@@ -7,7 +7,7 @@ $bContinue = $true
 $WikiDir = "C:\Users\Tony\source\repos\tdevere\AppCenterBuildLogWiki.wiki\"
 
 #buildLogDirectory is the location of the folder containing the seperated build logs
-$buildLogDirectory = "C:\Customer\26483531120\logs_9\Build"
+$buildLogDirectory = "C:\BuildLogFolder\logs_492\Build"
 
 #buildLogs is the collection of files found within that log
 $buildLogs = Get-ChildItem $buildLogDirectory -Filter *.txt 
@@ -175,7 +175,7 @@ if (Test-Path -Path $FailureLog)
     ### Research leads one down the path of seeing artlices like this https://github.com/valery-barysok/session-file-store/issues/65
     ### how does a customer know what root cause is here?
     ### how do we learn ourself? 
-    
+
     $AllMessagesArray = Get-Content $FailureLog | Select-String -AllMatches '##[^$]' 
     Foreach ($Message in $AllMessagesArray)
     {
