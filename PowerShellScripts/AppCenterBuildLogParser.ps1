@@ -125,7 +125,9 @@ if (Test-Path -Path $FailureLog)
         if (!$SectionFileExists)
         {       
             #if the SectionFile does not exist, then create one
-            $SectionFileName = $SectionArray -split ": ",2 | Select-Object -Skip 1
+            #BUG: Shouldn't need to do this again as it's already been done
+            #$SectionFileName = $SectionArray -split ": ",2 | Select-Object -Skip 1
+            
             New-Item $SectionFile -ItemType File -Value ($SectionFileName + [System.Environment]::NewLine)
             Add-Content $SectionFile "--"
 
