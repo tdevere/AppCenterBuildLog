@@ -7,7 +7,7 @@ $bContinue = $true
 $WikiDir = "C:\Users\Tony\source\repos\tdevere\AppCenterBuildLogWiki.wiki\"
 
 #buildLogDirectory is the location of the folder containing the seperated build logs
-$buildLogDirectory = "C:\BuildLogFolder\logs_492\Build"
+$buildLogDirectory = "C:\BuildLogFolder\logs_322\Build"
 
 #buildLogs is the collection of files found within that log
 $buildLogs = Get-ChildItem $buildLogDirectory -Filter *.txt 
@@ -99,8 +99,19 @@ if (Test-Path -Path $FailureLog)
     {
         #SectionFileName is the variable which represents the Markdown Wiki .MD file to store related errors
         $SectionFileName = $SectionArray -split ": ",2 | Select-Object -Skip 1 #used to remove the timestamp in logfile 
-        $SectionFileName += ".md"
-        #$SectionFileName
+
+        #Fixing BUG: if the error happens during checkout, we create a file name with the repo URL which exposes customer details
+        if ($SectionFileName.ToString().StartsWith("Checkout"))
+        {
+            #Let's never do that; instead, we'll add all errors to the checkout stage
+            $SectionFileName = "Checkout.md"
+
+        }
+        else 
+        {
+            $SectionFileName += ".md"
+            #$SectionFileName
+        }
 
         #SectionFile is the full path to the markdown file
         $SectionFile = $WikiDir + $SectionFileName
