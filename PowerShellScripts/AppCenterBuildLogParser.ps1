@@ -7,7 +7,7 @@ $bContinue = $true
 $WikiDir = "C:\Users\Tony\source\repos\tdevere\AppCenterBuildLogWiki.wiki\"
 
 #buildLogDirectory is the location of the folder containing the seperated build logs
-$buildLogDirectory = "C:\BuildLogFolder\logs_827\Build"
+$buildLogDirectory = "C:\Users\Tony\Downloads\logs_5\Build"
 
 #buildLogs is the collection of files found within that log
 $buildLogs = Get-ChildItem $buildLogDirectory -Filter *.txt 
