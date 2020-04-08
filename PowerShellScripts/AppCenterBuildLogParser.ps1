@@ -7,7 +7,7 @@ $bContinue = $true
 $WikiDir = "C:\Users\Tony\source\repos\tdevere\AppCenterBuildLogWiki.wiki\"
 
 #buildLogDirectory is the location of the folder containing the seperated build logs
-$buildLogDirectory = "C:\BuildLogFolder\logs_9\Build"
+$buildLogDirectory = "C:\BuildLogFolder\logs_827\Build"
 
 #buildLogs is the collection of files found within that log
 $buildLogs = Get-ChildItem $buildLogDirectory -Filter *.txt 
@@ -98,8 +98,14 @@ if (Test-Path -Path $FailureLog)
     if ($bContinue)
     {
         #SectionFileName is the variable which represents the Markdown Wiki .MD file to store related errors
+
         $SectionFileName = $SectionArray -split ": ",2 | Select-Object -Skip 1 #used to remove the timestamp in logfile 
 
+        #Fixing BUG: if the sectionFileName contains a / we're screwed :) need to replace the / and an " " to make sure the file will be created correctly
+        ##[section]Starting: yarn/npm install
+
+        $SectionFileName = $SectionFileName.ToString().Replace("/", " ")
+     
         #Fixing BUG: if the error happens during checkout, we create a file name with the repo URL which exposes customer details
         if ($SectionFileName.ToString().StartsWith("Checkout"))
         {
@@ -129,6 +135,7 @@ if (Test-Path -Path $FailureLog)
             #$SectionFileName = $SectionArray -split ": ",2 | Select-Object -Skip 1
             
             New-Item $SectionFile -ItemType File -Value ($SectionFileName + [System.Environment]::NewLine)
+            
             Add-Content $SectionFile "--"
 
             Foreach ($item in $ErrorsArray)
