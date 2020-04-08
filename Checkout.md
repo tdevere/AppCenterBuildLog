@@ -16,10 +16,10 @@ Checkout.md
 * Moving up look for the following text ##[command]git lfs fetch origin
 * Review each line and make notes of Warning, Errors, Failures
 
-####  Common Errors
+####  Common Problems
 ---
 
-| Advice     | Advice     |
+| Error/Warning/Messages     | Advice     |
 | ------------- |:-------------:
 | This repository is over its data quota.      | follow up with with LFS provider. For example, if the repro is on GitHub, follow up here: [managing-billing-for-git-large-file-storage](https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-git-large-file-storage) 
 

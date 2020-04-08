@@ -28,6 +28,8 @@ Function Problem_1
     $GitlfsFetch -split " ",2 | Select-Object -Skip 1
     $BatchResponse = Get-Content $FailureLog | Select-String -SimpleMatch 'batch response:' | Select-Object -Last 1
     $BatchResponse -split " ",2 | Select-Object -Skip 1
+    #Recommendations
+    Write-Host "Please review the solution document https://github.com/tdevere/AppCenterBuildLog/blob/master/Checkout.md#errorgit-lfs-fetch-failed-with-exit-code-2-git-lfs-logs-returned-with-exit-code-0"
     
 
 
