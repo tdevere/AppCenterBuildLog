@@ -7,7 +7,7 @@ $bContinue = $true
 $WikiDir = "C:\Users\Tony\source\repos\tdevere\AppCenterBuildLogWiki.wiki\"
 
 #buildLogDirectory is the location of the folder containing the seperated build logs
-$buildLogDirectory = "C:\BuildLogFolder\logs_322\Build"
+$buildLogDirectory = "C:\BuildLogFolder\logs_9\Build"
 
 #buildLogs is the collection of files found within that log
 $buildLogs = Get-ChildItem $buildLogDirectory -Filter *.txt 
@@ -181,7 +181,6 @@ else
 
 if (Test-Path -Path $FailureLog)
 {
-
     ###This pulls out all sections and highlights them; for the future, what I'd like to know how to correct identify important/unimportant elements within messages
     ### take this common entry - (node:2743) Warning: Use Cipheriv for counter mode of aes-256-ctr
     ### can this be safely ignored? If so, great let's document it and point it out
@@ -194,11 +193,6 @@ if (Test-Path -Path $FailureLog)
     {
         $Message -split " ",2 | Select-Object -Skip 1
     }
-
-
-
-
-   
 }
 
 
