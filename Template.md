@@ -1,4 +1,4 @@
-Template
+Template: Build Step
 --
 
 ## ``` ##[error]Use the exact error message from build log here. ```

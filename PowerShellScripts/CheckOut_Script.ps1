@@ -1,6 +1,6 @@
-Clear-Host
 
-#Using this as place holder - in the future, I think we'll have one big script OR learn to calls a script from a script
+
+#Using this as place holder for now
 $FailureLog = "C:\BuildLogFolder\02_Checkout_Git lfs fetch failed with exit code_2.txt"
 
 #This script will dedicate to identifing problems with the Checkout step of the build process.
@@ -18,10 +18,11 @@ Function Problem_1
 {
     Write-Host "Processing Problem_1 Solution"
     $Solutions[1]
+    
     ##[error]Git lfs fetch failed with exit code: 2. Git lfs logs returned with exit code: 0.
     #"Git lfs fetch" is the command which failed
+    
     #Step 1: Find the "Git lfs fetch" command
-
     $GitlfsFetch_cmd = Get-Content $FailureLog | Select-String -SimpleMatch '##[command]git lfs fetch origin' | Select-Object -Last 1
     $GitlfsFetch_cmd -split " ",2 | Select-Object -Skip 1
     $GitlfsFetch = Get-Content $FailureLog | Select-String -SimpleMatch 'fetch: Fetching reference' | Select-Object -Last 1
@@ -30,8 +31,6 @@ Function Problem_1
     $BatchResponse -split " ",2 | Select-Object -Skip 1
     #Recommendations
     Write-Host "Please review the solution document https://github.com/tdevere/AppCenterBuildLog/blob/master/Checkout.md#errorgit-lfs-fetch-failed-with-exit-code-2-git-lfs-logs-returned-with-exit-code-0"
-    
-
 
 }
 
@@ -44,8 +43,7 @@ if (Test-Path -Path $FailureLog)
     $RunSolutions = New-Object Collections.Generic.List[Int]
     #AllMessagesArray is a list of messages that COULD be part of a solution
     $AllMessagesArray = Get-Content $FailureLog | Select-String -AllMatches '##[^$]' 
-    #Process each message, and pull out just the error
-    
+    #Process each message, and pull out just the error    
     Foreach ($Message in $AllMessagesArray)
     {
         $errMessage = $Message -split " ",2 | Select-Object -Skip 1
