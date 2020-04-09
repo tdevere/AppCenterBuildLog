@@ -1,19 +1,37 @@
-# Welcome to the VS App Center BuildLog Wiki
+# Welcome to the VS App Center Build Log Wiki
 
 ## Introduction
 
-VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. This repro contains a PowerShell script we are developing to help first identify common build issues and then automatically create content on those problems with guidance recommendations you can take to help resolve. Ideally, this knowledge can grow over time and be community driven.  
+VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. Contributions are welcome. Please follow this form when making recommendations for content:
 
-Overview of the PowerShell Script
+```
+Build Step: (example here might be checkout)
+--
 
-1. Generate Failed Build Logs
-2. Run the script against the build logs
-3. We organize the logs and look for the failure section
-4. We determine if a home page has been created for the Section and create one if needed
-5. We add a list of errors to the Section if needed
+## ``` ##[error]Please use the exact error message from build log here. ```
+---
 
-TO DO: 
-1. Create content on steps to troubleshoot those errors
-2. Determine/Develop more sophisticated approaches to problems from log analysis
-3. Add these to a "rules engine" to generate more useful analysis 
+* Add meaningful context information 
+* and describe the problem
 
+
+#### Recommendations
+---
+
+* Add recommended troubleshootings steps
+* These should help isolate the problem
+
+####  Common Problems
+---
+* Use this section to identify exact error to solution mapping
+
+| Error/Warning/Messages     | Advice     |
+| ------------- |:-------------:
+| If we have exact messages add them | add solutions to those problems here
+
+```
+
+For an example document, take a look at the document  yarn_npm_install___error__bin_sh_failed_with_return_code__1.md
+
+
+Future Plans include developing a PowerShell script which can be used to analyze build logs for known problems based on the knowledge generated from this Wiki. Essentially, if we can identify a problem and solution from build, we'll work to develop a script it do that work. 
