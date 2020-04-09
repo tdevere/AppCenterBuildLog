@@ -18,10 +18,10 @@ Checkout
 
 ####  Common Problems
 ---
+1. This repository is over its data quota
+* Please follow up with with LFS provider. For example, if the repro is on GitHub, follow up here: [managing-billing-for-git-large-file-storage](https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-git-large-file-storage) 
+* Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
 
-| Error/Warning/Messages     | Advice     |
-| ------------- |:-------------:
-| This repository is over its data quota.      | follow up with with LFS provider. For example, if the repro is on GitHub, follow up here: [managing-billing-for-git-large-file-storage](https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-git-large-file-storage) 
 
 
 

@@ -19,10 +19,10 @@ Build Step: yarn npm install
 
 ####  Common Problems
 ---
+1. error An unexpected error occurred: "https://registry.yarnpkg.com/****: ESOCKETTIMEDOUT" 
+* either the build machine is having network problems or the endpoint hosting the package is having network problems. You can test by running the scrpit locally to determine which is the case. If the build machine does have the network issue, you can report it to App Center team but the problem may resolve itself as well
+* Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
 
-| Error/Warning/Messages     | Advice     |
-| ------------- |:-------------:
-| error An unexpected error occurred: "https://registry.yarnpkg.com/****: ESOCKETTIMEDOUT"      | either the build machine is having network problems or the endpoint hosting the package is having network problems. You can test by running the scrpit locally to determine which is the case. If the build machine does have the network issue, you can report it to App Center team but the problem may resolve itself as well 
 
 
 

@@ -1,7 +1,6 @@
 
-
 #Using this as place holder for now
-$FailureLog = "C:\BuildLogFolder\02_Checkout_Git lfs fetch failed with exit code_2.txt"
+$FailureLog = ""
 
 #This script will dedicate to identifing problems with the Checkout step of the build process.
 $Solutions = @{}

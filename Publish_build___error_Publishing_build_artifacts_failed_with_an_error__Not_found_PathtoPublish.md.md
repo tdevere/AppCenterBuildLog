@@ -19,9 +19,9 @@ Build Step: Publish build
 
 ####  Common Problems
 ---
-
-| Error/Warning/Messages     | Advice     |
-| ------------- |:-------------:
-| Add here | something here
+1. None docuemented yet
+* None Documented
+* None Documented
+* * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
 
 

@@ -23,15 +23,19 @@ Build Step: (example here might be checkout)
 
 ####  Common Problems
 ---
-* Use this section to identify exact error to solution mapping
-
-| Error/Warning/Messages     | Advice     |
-| ------------- |:-------------:
-| If we have exact messages add them | add solutions to those problems here
+1. Use this section to identify exact error to solution mapping
+* Error/Warning/Messages
+* Solutions
+* * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO/YES
 
 ```
 
-For an example document, take a look at the document  yarn_npm_install___error__bin_sh_failed_with_return_code__1.md
+For an example document, take a look at the document  [yarn_npm_install___error__bin_sh_failed_with_return_code__1.md](https://github.com/tdevere/AppCenterBuildLog/blob/master/yarn_npm_install___error__bin_sh_failed_with_return_code__1.md)
+
+Please note that we are including a PowerShell script [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1) which can be used to analyze build logs for known problems based on the knowledge generated from this Wiki. Essentially, if we can identify a problem and solution from build logs alone, we'll work to develop a script it do that work. In the future, it might become customary to start with a build log review from this script to determine if you have a known issue before having to crack open the logs and manually searching for information. We'll see how that works out.
 
 
-Future Plans include developing a PowerShell script which can be used to analyze build logs for known problems based on the knowledge generated from this Wiki. Essentially, if we can identify a problem and solution from build, we'll work to develop a script it do that work. 
+## How To Use the [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1)
+---
+
+* This section needs more work - coming soon.
