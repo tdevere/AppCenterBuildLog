@@ -49,7 +49,7 @@ Please note that we are including a PowerShell script [BuildLogAnalyzer.ps1](htt
 2. Create a new mark down page. 
 3. File Name Format of the page is (BuildStage_Exact_Error).md
 3. Example: yarn_npm_install___error__bin_sh_failed_with_return_code__1.md
-4. Use the Template in the reference above: Introduction
+4. Use the [Template in Introduction section](https://github.com/tdevere/AppCenterBuildLog#introduction) above
 5. When the changes are complete, create a pull request
 6. Once out of review, the changes will be merged
 
