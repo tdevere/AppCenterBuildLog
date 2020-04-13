@@ -26,8 +26,7 @@ Build Step: (example here might be checkout)
 
 ```
 
-For an example document, take a look at this [document](/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.md)
-
+Example documents [here](/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.html) and [here](/AppCenterBuildLog/Checkout___error_Git_lfs_fetch_failed_with_exit_code__2__Git_lfs_logs_returned_with_exit_code__0_.html)
 
 ### New or Updating Existing Content
 1. Fork the main repository https://github.com/tdevere/AppCenterBuildLog
