@@ -3,10 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-#Stash you local changes in a subfolder call InReview
-#Ignore the InReview Directory
-InReview/
-
 # User-specific files
 *.rsuser
 *.suo
