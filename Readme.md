@@ -2,7 +2,7 @@
 
 ## Introduction
 
-VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. [See the completed index of build failures here](https://tdevere.github.io/AppCenterBuildLog/content.md) Contributions are welcome. Please follow this form when making content submissions:
+VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. [See the completed index of build failures here](https://tdevere.github.io/AppCenterBuildLog/content.html) Contributions are welcome. Please follow this form when making content submissions:
 
 ```
 Build Step: (example here might be checkout)
