@@ -5,14 +5,8 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - CONTRIBUTING.md
   - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+  - Checkout___error_Git_lfs_fetch_failed_with_exit_code__2__Git_lfs_logs_returned_with_exit_code__0_.md
 
 
 

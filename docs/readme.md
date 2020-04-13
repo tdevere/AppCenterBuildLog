@@ -26,7 +26,7 @@ Build Step: (example here might be checkout)
 
 ```
 
-For an example document, take a look at the document  [yarn_npm_install___error__bin_sh_failed_with_return_code__1.md](https://tdevere.github.io/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.md)
+For an example document, take a look at this [document](/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.md)
 
 
 ### New or Updating Existing Content
