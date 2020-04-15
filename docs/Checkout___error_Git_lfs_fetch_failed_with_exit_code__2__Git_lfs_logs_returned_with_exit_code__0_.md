@@ -16,6 +16,9 @@ Checkout
 * Moving up look for the following text ##[command]git lfs fetch origin
 * Review each line and make notes of Warning, Errors, Failures
 
+#### If you still need to contact App Center Support
+* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
+
 ####  Common Problems
 ---
 1. This repository is over its data quota

@@ -17,6 +17,9 @@ Build Step: yarn npm install
 * Find the ##[error]/bin/sh failed with return code: 1
 * Moving up from that spot notes of Warning, Errors, Failures
 
+#### If you still need to contact App Center Support
+* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
+
 ####  Common Problems
 ---
 1. error An unexpected error occurred: "https://registry.yarnpkg.com/****: ESOCKETTIMEDOUT" 

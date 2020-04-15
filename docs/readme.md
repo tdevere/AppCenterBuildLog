@@ -1,6 +1,6 @@
 ## Introduction
 
-VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. [See the completed index of build failures here](/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.html) Contributions are welcome. Please follow this form when making content submissions:
+VS App Center Support is exploring better ways to help customers identify and resolve Build Failures. [See the completed index of build failures here](/AppCenterBuildLog/content.html) Contributions are welcome. Please follow this form when making content submissions:
 
 ```
 Build Step: (example here might be checkout)
@@ -18,6 +18,9 @@ Build Step: (example here might be checkout)
 
 * Add recommended troubleshootings steps
 * These should help isolate the problem
+
+#### If you still need to contact App Center Support
+* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
 
 ####  Common Problems
 ---
