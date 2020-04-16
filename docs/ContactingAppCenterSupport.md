@@ -2,7 +2,7 @@
 
 ### Verify Build Works Locally with a Clean Repo
 
-If the build succeeds on your local Windows or Mac computer but not on App Center, then it is usually because of uncommitted files, tooling or dependency differentiation.
+If the build succeeds on your local Windows or Mac computer but not on App Center, then it is usually because of uncommitted files, tooling, or dependency differentiation.
 
 Please perform a full git clone of your project into a new folder, this rules out dependencies which are cached locally. Then compile with the same configuration as App Center. This will ideally eliminate the most common root cause of these failures and expedite resolution.
 
@@ -10,7 +10,7 @@ Please perform a full git clone of your project into a new folder, this rules ou
 2. Then change directories: cd appcenterTest
 3. Clone your repository with: git clone -b your-branch https://your-repo 
 4. Then run the same build commands that we are using in App Center. You can build with command line or open the project file in your IDE
-5. If the local build is successful, please collec the local build logs and be prepared to send to App Center Support Team
+5. If the local build is successful, please collect the local build logs and be prepared to send to App Center Support Team
 
 Review [build-failed](https://docs.microsoft.com/en-us/appcenter/build/troubleshooting/build-failed) for more insights into common builds.
 
@@ -25,4 +25,4 @@ If you are unable to resolve the build failure following these guides, please he
     * When did the issue start to happen? 
     * Have you changed anything maybe related before the issue happened?
     * If you revert changes does build succeed?
-    * If we requier, may we run a debub build of your app?
+    * If we require, may we run a debug build of your app?
