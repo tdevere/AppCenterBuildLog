@@ -1,6 +1,7 @@
 Build Step: Publish build artifacts
+-
 Build Step: Publish symbols artifacts
---
+-
 
 ## ``` ##[error]Publishing build artifacts failed with an error: Not found PathtoPublish: /Some/Path/Here ```
 ---
