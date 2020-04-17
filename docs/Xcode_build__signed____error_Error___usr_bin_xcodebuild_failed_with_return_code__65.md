@@ -3,8 +3,7 @@ Build Step: XCode build (signed)
 Build Step: XCode build (not signed)
 -
 
-
-`c## ``` ``` ##[error]Error: /usr/bin/xcodebuild failed with return code: 65 ``` `
+## ``` ##[error]Error: /usr/bin/xcodebuild failed with return code: 65 ```
 ---
 
 * xcodebuild [return code 65](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/sysexits.3.html) indicates `The input data was incorrect in some way. This should only be used for user's data and not system files. `
@@ -40,8 +39,6 @@ Build Step: XCode build (not signed)
     
 
 * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
-
-###
 
 
 
