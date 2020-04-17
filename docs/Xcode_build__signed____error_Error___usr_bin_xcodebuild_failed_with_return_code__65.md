@@ -28,14 +28,13 @@ Build Step: XCode build (not signed)
             * ` unable to open file `
             * ` in project "Pods" ` 
     * Then you are likely in one of these situations
-    1. Your repro has a /Pods/ folder AND that repro does not contain the project that was unable to be opened.
-        * This behavior is documented [here](https://docs.microsoft.com/en-us/appcenter/build/ios/first-build#38-cocoapods)
+    1. Your repro has a /Pods/ folder AND that repro does not contain the project that was unable to be opened.        
         * You should either commit the missing project to the /Pods/ folder in the repro OR
         * Delete the /Pods/ folder in the repro
-        * To confirm you are hitting this problem you can check the build step Initialize job and look to see if there is a task downloaded like this ` 2020-04-04T18:25:30.0905810Z Downloading task: CocoaPods (0.151.1) `
-        * If there is no such step, App Center skipped it because it exists in the referenced repro already
+    * To confirm you are hitting this problem you can check the build step Initialize job and look to see if there is a task downloaded like this ` 2020-04-04T18:25:30.0905810Z Downloading task: CocoaPods (0.151.1) `
+        * If there is no recorded task, App Center skipped it because it exists in the referenced repro already. This behavior is documented [here](https://docs.microsoft.com/en-us/appcenter/build/ios/first-build#38-cocoapods)
     2. There was an earlier failure downloading the referenced project
-        * This would then most likey be caught on the buidl step ` Pod install `
+        * This would then most likey be caught on the build step ` Pod install `
         * Check this build log for more details regarding the referenced project in the `error:` referenced above
 
     
