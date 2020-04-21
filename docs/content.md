@@ -2,6 +2,8 @@
 
 [Checkout_1]: https://tdevere.github.io/AppCenterBuildLog/Checkout___error_Git_lfs_fetch_failed_with_exit_code__2__Git_lfs_logs_returned_with_exit_code__0_.html "Checkout___error_Git_lfs_fetch_failed_with_exit_code__2__Git_lfs_logs_returned_with_exit_code__0_.md"
 
+[Create_distribution_1]: https://tdevere.github.io/AppCenterBuildLog/error___code___bad_request___message___Error__Distribution_Store_with_id_xyz_does_not_exist___.html "error___code___bad_request___message___Error__Distribution_Store_with_id_xyz_does_not_exist___.md"
+
 [yarn_npm_install_1]: https://tdevere.github.io/AppCenterBuildLog/yarn_npm_install___error__bin_sh_failed_with_return_code__1.html "yarn_npm_install___error__bin_sh_failed_with_return_code__1.md"
 
 [Publish_build_1]: Publish_build___error_Publishing_build_artifacts_failed_with_an_error__Not_found_PathtoPublish.html "Publish_build___error_Publishing_build_artifacts_failed_with_an_error__Not_found_PathtoPublish.md"
@@ -10,6 +12,9 @@
 
 ## Checkout
 * [Checkout_1] - "Checkout___error_Git_lfs_fetch_failed_with_exit_code__2__Git_lfs_logs_returned_with_exit_code__0_.md"
+
+## Create distribution
+* [Create_distribution_1] - "error___code___bad_request___message___Error__Distribution_Store_with_id_xyz_does_not_exist___.md"
 
 ## Publish Build
 * [Publish_build_1] - "Publish_build___error_Publishing_build_artifacts_failed_with_an_error__Not_found_PathtoPublish.md"
