@@ -17,8 +17,6 @@ Build Step: yarn npm install
 * Find the ##[error]/bin/sh failed with return code: 1
 * Moving up from that spot notes of Warning, Errors, Failures
 
-#### If you still need to contact App Center Support
-* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
 
 ####  Common Problems
 ---
@@ -27,5 +25,6 @@ Build Step: yarn npm install
     * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
 
 
-
-
+####  Undocumented Problem
+---
+If your problem was not documented and you require further support, please see [Contact App Center Support for Build Failure](/AppCenterBuildLog/ContactingAppCenterSupport.html)

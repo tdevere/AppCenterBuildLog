@@ -16,9 +16,6 @@ Build Step: XCode build (not signed)
 * Looking for errors, warning, and other issues that standout
 * If this project built before, make sure to examine the previous successful build for differences which may shed light on the situation
 
-#### If you still need to contact App Center Support
-* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
-
 #### Common Problems
 ---
 1. If the Xcode build step includes line(s) with the following details
@@ -40,5 +37,8 @@ Build Step: XCode build (not signed)
 
 * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
 
+####  Undocumented Problem
+---
+If your problem was not documented and you require further support, please see [Contact App Center Support for Build Failure](/AppCenterBuildLog/ContactingAppCenterSupport.html)
 
 

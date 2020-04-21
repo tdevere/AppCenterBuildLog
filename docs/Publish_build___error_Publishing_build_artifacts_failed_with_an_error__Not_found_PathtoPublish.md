@@ -17,8 +17,6 @@ Build Step: Publish symbols artifacts
 * Ensure you use the correct path to artificates
 * Checkout App Center [Environment variables](https://docs.microsoft.com/en-us/appcenter/build/custom/variables/)
 
-#### If you still need to contact App Center Support
-* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
 
 ####  Common Problems
 ---
@@ -35,3 +33,8 @@ Build Step: Publish symbols artifacts
 
 
 #### Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO
+
+
+####  Undocumented Problem
+---
+If your problem was not documented and you require further support, please see [Contact App Center Support for Build Failure](/AppCenterBuildLog/ContactingAppCenterSupport.html)

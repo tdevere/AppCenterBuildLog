@@ -19,8 +19,6 @@ Build Step: (example here might be checkout)
 * Add recommended troubleshootings steps
 * These should help isolate the problem
 
-#### If you still need to contact App Center Support
-* [Recommendations for Contacting App Center Support](/AppCenterBuildLog/ContactingAppCenterSupport.html)
 
 ####  Common Problems
 ---
@@ -28,6 +26,11 @@ Build Step: (example here might be checkout)
     * Error/Warning/Messages
     * Solutions
     * Included in [BuildLogAnalyzer.ps1](https://github.com/tdevere/AppCenterBuildLog/blob/master/PowerShellScripts/BuildLogAnalyzer.ps1): NO/YES
+
+####  Undocumented Problem
+---
+If your problem was not documented and you require further support, please see [Contact App Center Support for Build Failure](/AppCenterBuildLog/ContactingAppCenterSupport.html)
+
 
 ```
 
